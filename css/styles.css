@@ -5,6 +5,29 @@
   --primary-bcg-color: #f4f4fd;
   --logo-color: #2e2f42;
 }
+
+/*?-----------------------RESET-------------------------- */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+/*?-----------------------BASE-------------------------- */
 body {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
@@ -16,6 +39,38 @@ body {
 }
 .link {
   text-decoration: none;
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.btn {
+  display: block;
 }
 /*?-----------------------LOGO-------------------------- */
 .logo {
@@ -30,6 +85,11 @@ body {
   color: var(--logo-color);
 }
 /*?-----------------------HEADER-------------------------- */
+.header {
+  background-color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .menu-link {
   line-height: 1.5;
   font-weight: 500;
@@ -51,28 +111,31 @@ body {
 /*?-----------------------HERO-------------------------- */
 .main-btn {
   font-family: "Roboto", sans-serif;
-
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
   align-items: center;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
   background-color: #4d5ae5;
   cursor: pointer;
+  margin-top: 48px;
 }
 .main-btn:hover {
   background-color: #404bbf;
   cursor: pointer;
 }
 .hero {
-  background-color: var(--tittle-text-color);
+  background-color: #2e2f42;
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--primary-white-color);
+  border-radius: nullpx;
 }
 /*?-----------------------OUR FEATURES-------------------------- */
 .features-title {
@@ -81,6 +144,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
+  margin-bottom: 8px;
 }
 .features-text {
   line-height: 1.5;
@@ -88,40 +152,55 @@ body {
   color: var(--primary-text-color);
 }
 /*?-----------------------WHAT ARE WE DOING-------------------------- */
-.section-title {
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+.examples-title {
+  margin-bottom: 72px;
+}
+.examples-item {
 }
 /*?-----------------------OUR TEAM-------------------------- */
 .our-team {
   background-color: var(--primary-bcg-color);
 }
+.team-title {
+  margin-bottom: 72px;
+}
 .team-item {
   background-color: var(--primary-white-color);
 }
-.team-title {
+.team-card-title {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .team-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
 }
 /*?-----------------------FOOTER-------------------------- */
 .footer {
   background-color: var(--tittle-text-color);
 }
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-bottom: 16px;
+}
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
+  margin-top: 16px;
 }
-.logo-footer {
+.logo-footer-span {
   color: #f4f4fd;
 }
 /*?-----------------------PORTFOLIO-------------------------- */
@@ -157,9 +236,16 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  padding-bottom: 32px;
+}
+.portfolio-btn-list {
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
